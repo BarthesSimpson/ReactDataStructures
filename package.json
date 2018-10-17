@@ -1,0 +1,35 @@
+{
+  "name": "wethebestmusic",
+  "version": "1.0.0",
+  "description": "goofing around building data structures using reactjs",
+  "main": "index.js",
+  "scripts": {
+    "build": "export NODE_ENV=production && webpack",
+    "start": "export NODE_ENV=development && webpack-dev-server --hot",
+    "test": "jest"
+  },
+  "keywords": [
+    "reactjs",
+    "data",
+    "structures"
+  ],
+  "author": "David Frenk",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.1.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  },
+  "devDependencies": {
+    "@babel/plugin-syntax-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "clean-webpack-plugin": "^0.1.19",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^23.6.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
+  }
+}
