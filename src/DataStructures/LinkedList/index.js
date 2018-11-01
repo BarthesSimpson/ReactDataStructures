@@ -1,14 +1,12 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
-const NodeContainer = ({ children }) => [children]
 export const ListNode = ({ val, next }) => (
-  <NodeContainer>
-    {val.toString()}
+  <Fragment>
+    {JSON.stringify(val)}
     {next}
-  </NodeContainer>
+  </Fragment>
 )
 
-export const ListContainer = ({ children }) => [children]
 const LinkedList = ({ vals, children }) => {
   let head
   let curr
@@ -18,12 +16,12 @@ const LinkedList = ({ vals, children }) => {
   while (i > 0) {
     let key = i - 1
     val = vals[key]
-    curr = <ListNode key={key} next={next} val={val} />
+    curr = <ListNode next={next} val={val} />
     next = curr
     i--
   }
   head = curr
-  return <ListContainer>{children(head)}</ListContainer>
+  return <Fragment>{children(head)}</Fragment>
 }
 
 export default LinkedList
