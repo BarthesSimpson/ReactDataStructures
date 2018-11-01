@@ -2,8 +2,7 @@ import React, { Fragment } from 'react'
 
 export const ListNode = ({ val, next }) => (
   <Fragment>
-    {JSON.stringify(val)}
-    {next}
+    {JSON.stringify(val)} {next && '>'} {next}
   </Fragment>
 )
 
