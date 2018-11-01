@@ -6,10 +6,10 @@ import Reverse from 'DataStructures/LinkedList/Reverse'
 const example = (
   <div>
     <h5>List</h5>
-    <LinkedList vals={[1, 2, 3]}>{list => list}</LinkedList>
+    <LinkedList vals={[1, 2, 3, 4, 5]}>{list => list}</LinkedList>
     <br />
     <h5>Reversed</h5>
-    <LinkedList vals={[1, 2, 3]}>
+    <LinkedList vals={[1, 2, 3, 4, 5]}>
       {list => <Reverse list={list}>{reversed => reversed}</Reverse>}
     </LinkedList>
   </div>
