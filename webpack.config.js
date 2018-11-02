@@ -60,7 +60,7 @@ module.exports = {
     extensions: ['.json', '.js', '.jsx'],
     mainFiles: ['index']
   },
-  devtool: IS_DEV ? 'cheap-module-eval-source-map' : 'source-map',
+  devtool: IS_DEV ? 'inline-source-map' : 'source-map',
   devServer: {
     historyApiFallback: true,
     port: 3000,
