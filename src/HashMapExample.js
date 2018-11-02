@@ -33,7 +33,7 @@ const HashMapExampleWrapper = ({ children }) => {
         setRemove({ key })
       }, 10000 + 1000 * i)
     )
-    // try (and fail) to these suckers again
+    // try (and fail) to get these suckers again
     keys.forEach((key, i) =>
       setTimeout(() => {
         setText(`Getting ${key}`)
